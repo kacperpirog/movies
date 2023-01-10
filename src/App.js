@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import AppContext from "./Context";
 import Router from "./routing/Router";
 import { baseImgUrl } from "./helpers/movieBaseImgUrl";
-// import Test from "./cw-styled-components/Test";
 import { getfavMoviesFromLocalStorage } from "./utils/localStorageGetters";
 import GlobalStyles from "./globalStyles/GlobalStyles";
 
@@ -15,6 +14,7 @@ const App = () => {
 
   useEffect(() => {
     getMovies();
+    // eslint-disable-next-line
   }, [page]);
 
   useEffect(() => {
