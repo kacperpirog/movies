@@ -34,7 +34,7 @@ const App = () => {
       .then((res) => {
         const movies = res.data.results;
         const lastPage = res.data.total_pages;
-        console.log(res.data, "RES");
+        console.log(res, "RES");
         setMovies(movies);
         setLastPage(lastPage);
       })

@@ -9,7 +9,8 @@ export const StyledDiv = styled.div`
     justify-content: center;  
     padding: 1rem;
     flex-wrap: wrap;
-    background: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+
     margin: 1rem;
     border-radius: 1rem;
   }

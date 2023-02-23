@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
 body{
 /* font-family: ; */
 overflow-x: hidden;
-background: #e0e0e0;
+background: linear-gradient(#56ECFF, #FCFB95);
   font-family: "Prompt", sans-serif;
 }
 
