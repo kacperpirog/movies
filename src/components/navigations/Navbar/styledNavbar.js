@@ -19,7 +19,6 @@ export const StyledLink = styled(Link)`
 
 export const StyledNavbarUl = styled.ul`
   display: inline-flex;
-  backdrop-filter: blur(10px);
   align-items: center;
   padding: 0 10px;
   margin: 50px 0 0 0;
