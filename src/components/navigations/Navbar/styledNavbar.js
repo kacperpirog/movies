@@ -34,7 +34,7 @@ export const StyledNavbarUl = styled.ul`
   justify-content: center;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 40px 0 0 0;
 `;
 
 export const StyledNavbarLi = styled.li`
@@ -49,7 +49,7 @@ export const StyledNavbarLi = styled.li`
     bottom: -5px;
     width: 100%;
     height: 2px;
-    background-color: ${(props) => (props.active ? "pink" : "transparent")};
+    background-color: ${(props) => (props.active ? "#df1754" : "transparent")};
     transform: scaleX(${(props) => (props.active ? 1 : 0)});
     transition: transform 0.3s ease;
   }

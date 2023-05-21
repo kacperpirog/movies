@@ -7,8 +7,8 @@ export const StyledDivPaginations = styled.div`
   flex-wrap: wrap;
   width: 100vw;
   padding: 1rem;
-  color:#000;
-  
+  color: #000;
+
   h2 {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -17,11 +17,8 @@ export const StyledDivPaginations = styled.div`
   button {
     position: relative;
     overflow: hidden;
-    border: 0;
-    height: 3rem;
-    width: 9rem;
-    box-shadow: inset 0 0 0 1px #000;
-    :before,
+
+    /* :before,
     :after {
       position: absolute;
       top: 0;
@@ -59,6 +56,6 @@ export const StyledDivPaginations = styled.div`
         transform: translate3d(0, 0, 0);
     
       }
-    }
+    }*/
   }
 `;
