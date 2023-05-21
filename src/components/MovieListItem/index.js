@@ -5,9 +5,10 @@ import {
   StyledDiv,
   StyledButton,
   StyledDivButton,
+  StyledDivInformations,
 } from "./StyledMovieListItem";
 
-const MovieListItem = ({ title, poster_path, id }) => {
+const MovieListItem = ({ title, poster_path, id, vote_average }) => {
   const { addToFavMovies, baseImgUrl, favMovies, deleteFavMovies } =
     useContext(AppContext);
 
@@ -49,7 +50,10 @@ const MovieListItem = ({ title, poster_path, id }) => {
                 </StyledButton>
               </StyledDivButton>
             </div>
-            <h5>{title}</h5>
+            <StyledDivInformations>
+              <h4>{title}</h4>
+              <h5>{vote_average}</h5>
+            </StyledDivInformations>
           </li>
         </ul>
       </StyledDiv>

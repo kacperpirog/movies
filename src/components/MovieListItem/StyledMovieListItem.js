@@ -29,14 +29,11 @@ export const StyledDiv = styled.div`
   }
   div{
     position: relative;
+    margin: -20px 0 0 0;
   }
 
-  h5 {
-    font-size: 0.8rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 10vw;
+  h4 {    
+
   }
 `;
 
@@ -66,4 +63,14 @@ export const StyledDivButton = styled.div`
   position: absolute;
   bottom: 4rem;
   right: -8rem;
+`;
+
+export const StyledDivInformations = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 10vw;
+  height: 5rem;
+  flex-direction: column;
 `;
