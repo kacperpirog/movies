@@ -15,39 +15,42 @@ export const NavWrapper = styled.nav`
 export const StyledLink = styled(Link)`
   text-decoration: none;
   color: #000;
+  &:hover {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: pink;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
 `;
 
 export const StyledNavbarUl = styled.ul`
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  padding: 0 10px;
-  margin: 50px 0 0 0;
-  li {
-    list-style: none;
-    color: #fff;
-    font-family: sans-serif;
-    font-weight: bold;
-    padding: 4px 12px;
-    margin: 0 8px;
-    position: relative;
-    cursor: pointer;
-    white-space: nowrap;
-    &::before {
-      content: " ";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      z-index: -1;
-      transition: 0.2s;
-    }
-    &:hover {
-      &::before {
-        background: linear-gradient(to bottom, #e8edec, #d2d1d3);
-        box-shadow: 0px 3px 20px 0px black;
-        transform: scale(1.2);
-      }
-    }
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+`;
+
+export const StyledNavbarLi = styled.li`
+  position: relative;
+  margin: 0 20px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: ${(props) => (props.active ? "pink" : "transparent")};
+    transform: scaleX(${(props) => (props.active ? 1 : 0)});
+    transition: transform 0.3s ease;
   }
 `;

@@ -4,18 +4,15 @@ import { Link } from "react-router-dom";
 export const StyledDiv = styled.div`
   display: flex;
   align-items: center;
+ 
   ul {
     display: flex;
     justify-content: center;  
-    padding: 1rem;
     flex-wrap: wrap;
-    background-color: rgba(255, 255, 255, 0.5);
-
-    margin: 1rem;
     border-radius: 1rem;
   }
   li{
-    max-width: 30rem;
+    max-width: 20rem;
     margin: 1rem;
     color: #000
     text-align: center

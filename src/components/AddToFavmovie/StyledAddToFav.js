@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 export const StyledDiv = styled.div`
   display: flex;
   align-items: center;
+  
   ul {
     display: flex;
     justify-content: center;  
