@@ -57,7 +57,11 @@ export const StyledButton = styled.button`
   height: 3rem;
   &:hover {
     transform: scale(0.9);
+    background-color: #df1754;
     transition-duration: 0.4s;
+    color: #fff;
+    &::before {
+    }
   }
 `;
 
