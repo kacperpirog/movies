@@ -15,47 +15,21 @@ export const StyledDivPaginations = styled.div`
   }
 
   button {
-    position: relative;
-    overflow: hidden;
+    width: 8rem;
+    height: 2rem;
+    border-color: #df1754;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #df1754 inset, 0 0 0 0 #df1754;
+    transition: all 150ms ease-in-out;
 
-    /* :before,
-    :after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      content: "";
-      h4{ 
-        color: #000
-      }
-    }
-    :before {
-      background: #000;
-      border: 1px solid #e0d0b0;
-      transform: translate3d(-100%, 0, 0);
-      transition: transform 0.3s ease-in;
-     
-    }
-    :after {
+    &:hover {
+      width: 8rem;
+      height: 2rem;
+      border-color: #000;
       background: #fff;
-      color: #000
-      border: 1px solid #fff;
-      transform: translate3d(100%, 0, 0);
-      transition: transform 0.25s ease-out 0.29s;
-     
+      color: #df1754;
+      box-shadow: 0 0 40px 40px #fff inset, 0 0 0 0 #fff;
+      transition: all 150ms ease-in-out;
     }
-    span {
-    position: relative;
-    z-index: 10;
-  }
-
-    :hover {
-      :before,
-      :after {
-        transform: translate3d(0, 0, 0);
-    
-      }
-    }*/
   }
 `;
