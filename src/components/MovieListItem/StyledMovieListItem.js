@@ -29,14 +29,17 @@ export const StyledDiv = styled.div`
   }
   div{
     position: relative;
-    margin: -20px 0 0 0;
+    margin: -25px 0 0 0;
   }
 
-  h4 {    
+  h5 {  
+   margin: -1.5rem 0 0 0;  
 
   }
 `;
-
+export const imgMovie = styled.img`
+  width: 1rem;
+`;
 export const StyledLink = styled(Link)`
   text-decoration: none;
   color: #000;
@@ -73,4 +76,10 @@ export const StyledDivInformations = styled.div`
   width: 10vw;
   height: 5rem;
   flex-direction: column;
+  img {
+    width: 0.9rem;
+    border-radius: none;
+    box-shadow: none;
+    margin: 0 5px 0 0;
+  }
 `;

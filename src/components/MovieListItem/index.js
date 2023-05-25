@@ -7,6 +7,7 @@ import {
   StyledDivButton,
   StyledDivInformations,
 } from "./StyledMovieListItem";
+import star from "../../assets/star-icon.svg";
 
 const MovieListItem = ({ title, poster_path, id, vote_average }) => {
   const { addToFavMovies, baseImgUrl, favMovies, deleteFavMovies } =
@@ -52,7 +53,10 @@ const MovieListItem = ({ title, poster_path, id, vote_average }) => {
             </div>
             <StyledDivInformations>
               <h4>{title}</h4>
-              <h5>{vote_average}</h5>
+              <h5>
+                <img src={star} alt={title}></img>
+                {vote_average}
+              </h5>
             </StyledDivInformations>
           </li>
         </ul>
